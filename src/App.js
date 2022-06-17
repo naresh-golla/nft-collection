@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
+import About from './components/About';
+import CountDown from './components/CountDown';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainDiv from './components/MainDiv';
+import RenderNft from './components/RenderNft';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <ToastContainer />
+      <CountDown />
+      <MainDiv />
+      <RenderNft />
+      <About />
+      <Footer />
     </div>
   );
 }
