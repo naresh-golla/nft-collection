@@ -67,6 +67,7 @@ export default function ExploreDiv({ tokenId }) {
                                 collection #22 on shardeum liberty🗽 @nftshm #shardeum #ShardeumNFT ❤"
                                 data-url={`https://boss.shardeum.us/explore/${tokenId}`}
                                 data-show-count="false">
+                                    Tweet
                             </a>
                         </div>
                     </button>

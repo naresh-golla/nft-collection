@@ -6,7 +6,7 @@ export class Footer extends Component {
     return (
       <div class="footer_links">
         <SocialIcon url="https://twitter.com/NftShm" network="twitter" fgColor="#fff" />
-        <SocialIcon url="https://discord.gg/N3EDKAaa"  fgColor="#fff" />
+        <SocialIcon url="https://discord.gg/hb4ZcFRYk3"  fgColor="#fff" />
       </div>
     )
   }
