@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <ToastContainer />
-      <CountDown />
+      {/* <CountDown /> */}
       <MainDiv />
       <RenderNft />
       <About />

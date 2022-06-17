@@ -77,7 +77,7 @@ export default function ExploreDiv({ tokenId }) {
                         <div class="button_div">
                             <Share url={`https://boss.shardeum.us/explore/${tokenId}`} 
                                    options={{ 
-                                       text: "Hey! checkout my Shardian Boss PFP #NFT  🔥 collection #22 on shardeum liberty🗽 @nftshm @NischalShetty #shardeum #ShardeumNFT ❤" ,
+                                       text: `Hey! checkout my Shardian Boss PFP #NFT  🔥 collection ${tokenId} on shardeum liberty🗽 @nftshm @NischalShetty #shardeum #ShardeumNFT ❤` ,
                                        size: "large" 
                                     }}
                             />

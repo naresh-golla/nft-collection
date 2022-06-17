@@ -38,12 +38,12 @@ export default function MainDiv() {
     useEffect(() => {
         if(userData.userAddress){
             fetchMints()
-            let WhitelistedArray = WhitelistedAddress.map(item=>item.toLowerCase());
-            let isWhiteListed = WhitelistedArray.includes(userData.userAddress.toLowerCase())
-            user_Data_Context.setUserData(prevState => ({
-                ...prevState,
-                isWhiteListed: isWhiteListed
-            }))            
+            // let WhitelistedArray = WhitelistedAddress.map(item=>item.toLowerCase());
+            // let isWhiteListed = WhitelistedArray.includes(userData.userAddress.toLowerCase())
+            // user_Data_Context.setUserData(prevState => ({
+            //     ...prevState,
+            //     isWhiteListed: isWhiteListed
+            // }))            
         }
 
     }, [userData.userAddress])
@@ -55,9 +55,9 @@ export default function MainDiv() {
         }))
     }, [userMintedNFTs])
 
-    useEffect(()=>{
+    // useEffect(()=>{
 
-    },[userData.isWhiteListed])
+    // },[userData.isWhiteListed])
 
     const mintNFT = async () => {
         console.log("mint")
@@ -148,10 +148,10 @@ export default function MainDiv() {
                 </div>
                 {(inputValue > 0 && inputValue < 3) ? (
                     <div className="sub_title u-mt-10">Price : {inputValue} X {cost} = {inputValue * cost} $SHM</div>) : (
-                    <div className="sub_title u-mt-10">Whitelisted address can mint 2 NFTs</div>
+                    <div className="sub_title u-mt-10">Each address can only mint 2 NFTs</div>
                 )}
                 <button
-                    disabled={!userData.isShardeum || inputValue < 1 || inputValue > 2 || !userData.isWhiteListed}
+                    disabled={!userData.isShardeum || inputValue < 1 || inputValue > 2 || userMintedNFTs.length === 2}
                     className="connect_button connect_button3"
                     onClick={mintNFT}
                 >
