@@ -17,7 +17,7 @@ export default function MainDiv() {
     const [totalSupply, setTotalSupply] = useState(0)
 
 
-    const CONTRACT_ADDRESS = "0x2c81BFFBC20c2ed38a6F90f949687fD970279e57"
+    const CONTRACT_ADDRESS = "0xcb4026b2C94347214C8b44a535a2E04d4719CB75"
 
     const user_Data_Context = useContext(UserDataContext)
     let userData = user_Data_Context.userData
